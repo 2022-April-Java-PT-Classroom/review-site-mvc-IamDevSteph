@@ -19,10 +19,15 @@
         <h3 th:text="${reviewModel.category}"></h3>
         <img th:src="${reviewModel.urlImage}">
         <li th:text="${reviewModel.description}"></li>
-        <a href="/reviews">Reviews</a>
         </p>
     </ul>
 </main>
+    <nav>
+        <a href="/review?id=1">Princess Mononoke</a>
+        <a href="/review?id=2">Kiki's Delivery Service</a>
+        <a href="/review?id=3">Howl's Moving Castle</a>
+        <a href="/review?id=4">Spirited Away</a>
+    </nav>
     <footer>
         <small>&copy Stephanie Ingraham @ WCCI 2022</small>
     </footer>
