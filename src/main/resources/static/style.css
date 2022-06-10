@@ -1,0 +1,24 @@
+html, body{
+height: 100%;
+text-align: center;
+}
+
+main{
+flex-grow: 1;
+}
+
+body{
+ background-color: mintcream;
+ border: 6px solid cornflowerblue;
+ display: flex;
+ flex-direction: column;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+footer {
+position: fixed;
+
+}

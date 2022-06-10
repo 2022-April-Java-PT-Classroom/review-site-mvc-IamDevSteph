@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-  <meta charset="UTF-8">
-  <title th:text="${reviewModel.name}">A Review</title>
+    <link rel="stylesheet" href="/style.css"/>
+    <meta charset="UTF-8">
+    <title th:text="${reviewModel.name}">A Review</title>
 </head>
 <body>
     <header>
@@ -18,13 +19,12 @@
         <h3 th:text="${reviewModel.category}"></h3>
         <img th:src="${reviewModel.urlImage}">
         <li th:text="${reviewModel.description}"></li>
-        <li th:text="${reviewModel.category}"></li>
         <a href="/reviews">Reviews</a>
         </p>
     </ul>
 </main>
     <footer>
-        <small>&copy WCCI 2022</small>
+        <small>&copy Stephanie Ingraham @ WCCI 2022</small>
     </footer>
 
 </body>

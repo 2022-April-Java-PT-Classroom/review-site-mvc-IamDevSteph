@@ -27,6 +27,4 @@ public class ReviewRepositoryTest {
         assertThat(foundReviews).contains(reviewOne, reviewTwo);
     }
 
-
-
 }
