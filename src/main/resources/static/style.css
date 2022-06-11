@@ -2,6 +2,7 @@ html, body{
 height: 100%;
 text-align: center;
 }
+
 nav {
 position: fixed;
 top: 0;
@@ -42,6 +43,11 @@ body{
 
 ul li{
     list-style-type: none;
+    font-size: 20px;
+    padding: 10px;
+    border: 10px dotted lightcyan;
+    margin: 10px;
+    background: azure;
 }
 
 footer {
@@ -52,4 +58,27 @@ color: black;
 padding: 1em 0;
 text-align: center;
 
+@media only screen and (max-width: 767px){
+header{
+align-items: center;
+display: flex;
+flex-direction: column;
+}
+nav{
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin: 0;
+}
+main{
+display:flex;
+alrign-items: center;
+flex-direction: column;
+}
+footer{
+align-items: center;
+flex-direction: column;
+}
+
+}
 }
