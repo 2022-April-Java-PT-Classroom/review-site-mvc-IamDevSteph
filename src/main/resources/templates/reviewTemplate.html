@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" href="/style.css"/>
+    <meta charset="UTF-8">
+    <title th:text="${reviewModel.name}">A Review</title>
+</head>
+<body>
+    <header>
+        <h1 th:text="${reviewModel.name}">My Reviews</h1>
+    </header>
+
+<main>
+    <ul>
+        <p>
+<!--        <h2 th:text="${reviewModel.name}"></h2>-->
+        <h2 th:text="${reviewModel.date}"></h2>
+        <h3 th:text="${reviewModel.content}"></h3>
+        <h3 th:text="${reviewModel.category}"></h3>
+        <img th:src="${reviewModel.urlImage}" alt="Images" class="images" width="800px" height="auto">
+        <li th:text="${reviewModel.description}"></li>
+        </p>
+    </ul>
+</main>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/review?id=1">Princess Mononoke</a>
+        <a href="/review?id=2">Kiki's Delivery Service</a>
+        <a href="/review?id=3">Howl's Moving Castle</a>
+        <a href="/review?id=4">Spirited Away</a>
+    </nav>
+    <footer>
+        <small>&copy Stephanie Ingraham @ WCCI 2022</small>
+    </footer>
+
+</body>
+</html>
